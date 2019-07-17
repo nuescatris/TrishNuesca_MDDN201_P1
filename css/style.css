@@ -1,0 +1,161 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+
+
+
+/*| Navigation |*/
+nav{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+    position: fixed;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+nav ul a{
+    color:#000;
+	line-height: 30px;
+	margin-left: 4em;
+	margin-right: 4em;
+	text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+nav ul a:hover{
+	color: silver;
+}
+
+
+
+
+
+/*| Home Page |*/
+header{
+	background-color: rgba(255, 255, 255, 0.08);
+	color: white; /* more readable on an orange background */
+    width: 100%;
+    height: 850px;
+    padding-top: 50px;
+}
+
+
+
+
+
+/*| Containers |*/
+section{
+    background-color: black;
+    color: white;
+	width: 100%;
+    height: 850px;
+    margin-top: 20px;
+}
+
+#content{
+    background-color: transparent;
+    width: 90%;
+    height: 750px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+#content2{
+    background-color: transparent;
+    width: 90%;
+    height: 730px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+#three{
+    background-color: black;
+    color: white;
+	width: 100%;
+    height: 800px;
+    margin-top: 20px;
+}
+
+
+
+/*| Text |*/
+h2{
+    font-family: palatino; 
+    font-size: 50px;
+    text-align: left; 
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+p{
+    font-family: monospace; 
+    font-size: 14px;
+    text-align: left; 
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+
+
+/*| Imgs |*/
+#zoom img:hover{
+	transform:scale(1.2);
+}
+
+.center{
+    display: inline-block;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+
+
+
+/* Simple grid */
+#left_column{
+    background: transparent;
+    width: 50%;
+	float: left;  
+}
+
+#right_column{
+    background: transparent;
+    width: 50%;
+	float: right;  
+}
+
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+	width: 94%; /*This makes all images in grids to be the size of their cell */
+}
+
+
+.g-30{
+	width: 40%;
+	float: left;
+}
+
+.g-70{
+	width: 60%;
+	float: left;
+}
+
+
+.padded{
+	padding-left: 10px; /* I add this to cells to add a little padding*/
+}
