@@ -291,11 +291,34 @@ div.panel.show{
 }
 
 #content4{
-    background-color: transparent;
+    background-color: rgba(92, 106, 109, 0.9);
+    color:black;
     width: 70%;
-    height: 730px;
+    height: 260px;
     margin-left: auto;
 	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#content11{
+    background-color: rgba(31, 35, 40, 0.9);
+    width: 70%;
+    height: 740px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#content12{
+    background-color: rgba(92, 106, 109, 0.9);
+    width: 70%;
+    height: 740px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
@@ -352,13 +375,17 @@ p{
 
 .center_pg4{
     display: inline-block;
-    margin-left: 66px;
-    margin-right: 66px;
+    margin-left: 29px;
+    margin-right: 29px;
 }
 
 
 #zoom img:hover{
 	transform:scale(1.2);
+}
+
+#zoom{
+    padding-left: 10px;
 }
 
 
@@ -388,6 +415,10 @@ p{
     background: transparent;
     width: 60%;
 	float: right;  
+}
+
+.padd{
+    padding-left: 10px;
 }
 
 #left_column3{
