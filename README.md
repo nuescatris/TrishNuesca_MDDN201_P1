@@ -1,3 +1,3 @@
 # More Progress on Project 1
 
-Finished laying out images + text. Next step is to add them + replace words with actual context.
+Added relevant images + texts. Happy for this to be my final although I may make a few changes before hand in. 
