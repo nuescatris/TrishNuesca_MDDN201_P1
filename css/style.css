@@ -7,10 +7,10 @@
 
 
 
-/*| Navigation |*/
+/*| NAVIGATION |*/
 nav{
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	background-color: white;
     position: fixed;
     text-align: center;
@@ -24,7 +24,7 @@ nav ul{
 
 nav ul a{
     color:#000;
-	line-height: 30px;
+	line-height: 25px;
 	margin-left: 4em;
 	margin-right: 4em;
 	text-decoration: none;
@@ -33,70 +33,294 @@ nav ul a{
 }
 
 nav ul a:hover{
-	color: silver;
+	color: #94a7ae;
 }
 
 
 
 
 
-/*| Home Page |*/
+
+
+/*| HOME PAGE |*/
 header{
-	background-color: rgba(255, 255, 255, 0.08);
+	background-color: transparent;
 	color: white; /* more readable on an orange background */
     width: 100%;
     height: 850px;
-    padding-top: 50px;
+    padding-top: 30px;
+}
+
+/*ARROWS*/
+.arrows{
+ width: 60px;
+ height: 72px;
+ position: absolute;
+ left: 50%;
+ margin-left: -30px;
+ bottom: 20px;
+}
+
+.arrows path {
+ stroke: #94a7ae;/* colour of arrows white */
+ fill: transparent;
+ stroke-width: 1px;/*width of each arrow stroke*/	
+ animation: arrow 3s infinite;/* animation of arrow-adjusts duration to be 3s long, runs infinitely */
+ -webkit-animation: arrow 2s infinite;/* Safari and Chrome*/
+}
+
+@keyframes arrow{
+ 0% {opacity:0}
+ 40% {opacity:1}
+ 80% {opacity:0}
+ 100% {opacity:0}
+}
+
+@-webkit-keyframes arrow{
+ 0% {opacity:0}
+ 40% {opacity:1}
+ 80% {opacity:0}
+ 100% {opacity:0}
+}
+
+.arrows path.a1 {
+ animation-delay:-1s;
+ -webkit-animation-delay:-1s; /* Safari, Chrome */
+}
+
+.arrows path.a2 {
+ animation-delay:-0.5s;
+ -webkit-animation-delay:-0.5s; 
+}
+
+.arrows path.a3 {
+ animation-delay:-0s;
+ -webkit-animation-delay:-0s; 
 }
 
 
 
 
 
-/*| Containers |*/
-section{
-    background-color: black;
-    color: white;
+
+
+
+
+/*| CONTAINERS |*/
+
+/*| Containers_HomePage |*/
+#intro{
+    background-color: rgba(0, 0, 0, 0.8);
 	width: 100%;
-    height: 850px;
+    height: 820px;
     margin-top: 20px;
+    overflow: auto;
 }
 
-#content{
-    background-color: transparent;
-    width: 90%;
-    height: 750px;
+#content1{
+    background-color: rgba(31, 35, 40, 0.8);
+    width: 70%;
+    height: 300px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+#content5{
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    width: 70%;
+    height: 290px;
     margin-left: auto;
 	margin-right: auto;
 }
 
+#content6{
+    background-color: rgba(31, 35, 40, 0.8);
+    width: 70%;
+    height: 100px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+
+
+
+
+
+/*| Containers_Page2 |*/
+#social_med1{
+    background-color: rgba(0, 0, 0,0.7);
+	color: white; /* more readable on an orange background */
+    width: 100%;
+    height: 820px;
+    padding-top: 30px;
+    overflow: auto;
+}
+
 #content2{
+    background-color: rgba(92, 106, 109, 0.9);
+    color:black;
+    width: 70%;
+    height: 560px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+}
+
+#content7{
+    background-color: rgba(31, 35, 40, 0.9);
+    width: 70%;
+    height: 440px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: inherit;
+}
+
+#content8{
+    background-color: rgba(92, 106, 109, 0.9);
+    width: 70%;
+    height: 490px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+}
+
+
+button.accordion{
     background-color: transparent;
-    width: 90%;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+button.accordion:hover{
+    color: #94a7ae;
+}
+
+div.panel{
+    background-color: rgba(92, 106, 109, 0.9);
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;/*add ease-in-out transition to div panel when it is clicked*/
+}
+
+div.panel.show{
+    opacity: 1;
+    max-height: 500px; 
+}
+
+
+
+
+
+
+
+/*| Containers_Page3 |*/
+#manholes_1{
+    background-color: rgba(0, 0, 0, 0.9);
+	color: white; /* more readable on an orange background */
+    width: 100%;
+    height: 820px;
+    padding-top: 30px;
+    overflow: auto;
+}
+
+#content3{
+    background-color: rgba(31, 35, 40, 0.9);
+    width: 70%;
+    height: 280px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#content9{
+    background-color: transparent;
+    width: 70%;
+    height: 390px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#content10{
+    background-color: rgba(31, 35, 40, 0.9);
+    width: 70%;
+    height: 580px;
+    margin-left: auto;
+	margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
+
+/*| Containers_Page4 |*/
+#cameras_1{
+    background-color: rgba(0, 0, 0, 0.9);
+	color: white; /* more readable on an orange background */
+    width: 100%;
+    height: 820px;
+    padding-top: 30px;
+    overflow: auto;
+}
+
+#content4{
+    background-color: transparent;
+    width: 70%;
     height: 730px;
     margin-left: auto;
 	margin-right: auto;
 }
 
-#three{
-    background-color: black;
-    color: white;
-	width: 100%;
-    height: 800px;
-    margin-top: 20px;
+
+
+
+
+/*| TEXT |*/
+
+h1{
+    font-family: palatino; 
+    font-size: 80px; 
+    text-align: center; 
+    letter-spacing: 8px; 
+    text-shadow: 2.5px 2.5px 5px #94a7ae;
 }
 
-
-
-/*| Text |*/
 h2{
     font-family: palatino; 
     font-size: 50px;
-    text-align: left; 
+    text-align: center; 
     letter-spacing: 8px;
     text-transform: uppercase;
     margin-bottom: 0px;
 }
+
 
 p{
     font-family: monospace; 
@@ -108,21 +332,40 @@ p{
 
 
 
-/*| Imgs |*/
+
+
+
+
+/*| IMGS |*/
+.center_home{
+    display: inline-block;
+    margin-left: 41px;
+    margin-right: 41px;
+}
+
+.center_p2{
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.center_pg4{
+    display: inline-block;
+    margin-left: 66px;
+    margin-right: 66px;
+}
+
+
 #zoom img:hover{
 	transform:scale(1.2);
 }
 
-.center{
-    display: inline-block;
-    margin-left: 110px;
-    margin-right: 110px;
-}
 
 
 
 
-/* Simple grid */
+
 #left_column{
     background: transparent;
     width: 50%;
@@ -135,27 +378,82 @@ p{
 	float: right;  
 }
 
+#left_column2{
+    background: transparent;
+    width: 40%;
+	float: left;  
+}
+
+#right_column2{
+    background: transparent;
+    width: 60%;
+	float: right;  
+}
+
+#left_column3{
+    background: #aebfc3;
+    width: 45%;
+	float: left;  
+}
+
+#right_column3{
+    background: #aebfc3;
+    width: 45%;
+	float: right;  
+}
+
+
+
+
 .g-row{
 	width: 100%;
 	overflow: hidden;
 }
 
 .g-row img{
-	width: 94%; /*This makes all images in grids to be the size of their cell */
+	width: 100%; /*This makes all images in grids to be the size of their cell */
 }
 
-
 .g-30{
-	width: 40%;
+	width: 50%;
 	float: left;
 }
 
 .g-70{
-	width: 60%;
+	width: 50%;
 	float: left;
 }
 
-
 .padded{
-	padding-left: 10px; /* I add this to cells to add a little padding*/
+	padding-left: 20px; 
+    padding-right: 20px; 
+    padding-top: 20px;
+}
+
+.pad{
+    padding-left: 20px; 
+}
+
+
+/* Panel Content */
+.g-row_p2{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-30_p2{
+	width: 20%;
+	float: left;
+}
+
+.g-70_p2{
+	width: 80%;
+	float: left;
+}
+
+.padded2{
+	padding-left: 10px; 
+    padding-right: 20px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
